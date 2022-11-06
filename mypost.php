@@ -8,18 +8,18 @@
   <title>mypost</title>
   <style>
         a {
-            color: #fff;
+            color: black;
         }
 
         * {
             font-family: Arial, Helvetica, sans-serif;
             text-decoration: none;
-            color:#FCE2DB;
+            color:black;
         }
     </style>
 </head>
 
-<body style="background-color: #80489C;">
+<body style="background-color: white;">
   <?php
   session_start();
   include 'partials/header.php';
@@ -45,7 +45,7 @@
         $time = $row['post_time'];
         $pic = $row['item_picture1'];
         $p_id = $row['post_id'];
-        echo '<div class="">
+        echo '<div class="" style="border:2px solid red;border-radius:20px;padding:5px;">
       <div class="">
         <div class="">
           <img src="project_x_copy/' . $pic . '" class="card-img" alt="..." width="360" height="250">

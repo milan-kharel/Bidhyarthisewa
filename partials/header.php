@@ -25,9 +25,9 @@
 
         if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
             echo '
-                        <a href="./mypost.php"><div class="nav-item">My posts</div></a>
-                        <a href="./makepost.php"><div class="nav-item">New Post</div></a>
-                        <a href="./request.php"><div class="nav-item">Requests</div></a>
+                        <a href="./mypost.php"><div class="nav-item" style="color:black;font-weight:700;">My posts</div></a>
+                        <a href="./makepost.php"><div class="nav-item" style="color:black;font-weight:700;">New Post</div></a>
+                        <a href="./request.php"><div class="nav-item" style="color:black;font-weight:700;">Requests</div></a>
                     ';
         }
         ?>
@@ -40,10 +40,10 @@
         <!-- show logout or login -->
         <?php
         if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true) {
-            echo '<div class="nav-item">Welcome ' . $_SESSION["useremail"] . '</div>';
+            echo '<div class="nav-item" style="color:black;font-weight:700;">Welcome ' . $_SESSION["useremail"] . '</div>';
 
             //logout button
-            echo '<a href="partials/logouthandle.php">LogOut</a>';
+            echo '<a href="partials/logouthandle.php" style="color:black;font-weight:700;">LogOut</a>';
         } else {
             echo '
             <div>
