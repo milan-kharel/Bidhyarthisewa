@@ -14,9 +14,7 @@
     <nav>
         <a href="./">
             <div class="brand">
-                <img src="./assets/Logo/Logo-400-100.png" alt="logo_here" height="30">
-
-
+                <img src="./assets/Logo/Logo-400-100.png" alt="logo_here">
             </div>
         </a>
 
@@ -33,10 +31,10 @@
                     ';
         }
         ?>
-        <form action="search.php" method="GET">
-            <input type="text" name="search">
-            <input type="submit">
-
+        <form action="search.php" method="GET" class="search-bar">
+            <input type="text" name="search" class="search-value" placeholder="What you looking for...">
+            <!-- Here input is changed to button   -->
+            <button type="submit"><img src="./assets/Icons/search.png"></button>
         </form>
 
         <!-- show logout or login -->
