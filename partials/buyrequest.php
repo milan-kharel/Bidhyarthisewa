@@ -7,19 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @font-face {
-            font-family: 'Source Sans Pro';
-            font-style: normal;
-            font-weight: 200;
-            src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Source Sans Pro';
-            font-style: normal;
-            font-weight: 300;
-            src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
         * {
             box-sizing: border-box;
@@ -29,21 +17,21 @@
         }
 
         body {
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: white;
             font-weight: 300;
         }
 
         body ::-webkit-input-placeholder {
             /* WebKit browsers */
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: white;
             font-weight: 300;
         }
 
         body :-moz-placeholder {
             /* Mozilla Firefox 4 to 18 */
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: white;
             opacity: 1;
             font-weight: 300;
@@ -51,7 +39,7 @@
 
         body ::-moz-placeholder {
             /* Mozilla Firefox 19+ */
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: white;
             opacity: 1;
             font-weight: 300;
@@ -59,14 +47,14 @@
 
         body :-ms-input-placeholder {
             /* Internet Explorer 10+ */
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: white;
             font-weight: 300;
         }
 
         .wrapper {
             background: #50a3a2;
-            background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+            background: linear-gradient(to bottom right, #AD0000 0%, #DCBEBE 100%);
             position: absolute;
             top: 50%;
             left: 0;
@@ -92,7 +80,7 @@
             font-size: 40px;
             transition-duration: 1s;
             transition-timing-function: ease-in-put;
-            font-weight: 200;
+            font-weight: 800;
         }
 
         form {
@@ -127,7 +115,7 @@
         form input:focus {
             background-color: white;
             width: 300px;
-            color: #53e3a6;
+            color: #ad0000;
         }
 
         form button {
@@ -138,7 +126,7 @@
             background-color: white;
             border: 0;
             padding: 10px 15px;
-            color: #53e3a6;
+            color: black;
             border-radius: 3px;
             width: 250px;
             cursor: pointer;
@@ -147,7 +135,7 @@
         }
 
         form button:hover {
-            background-color: #f5f7f9;
+            background-color: #ad0000;
         }
 
         .bg-bubbles {
@@ -174,6 +162,7 @@
 
         .bg-bubbles li:nth-child(1) {
             left: 10%;
+            background-color: #AD0000;
         }
 
         .bg-bubbles li:nth-child(2) {
@@ -198,7 +187,7 @@
             height: 60px;
             -webkit-animation-duration: 22s;
             animation-duration: 22s;
-            background-color: rgba(255, 255, 255, 0.25);
+            background-color: white;
         }
 
         .bg-bubbles li:nth-child(5) {
@@ -211,7 +200,7 @@
             height: 120px;
             -webkit-animation-delay: 3s;
             animation-delay: 3s;
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: white;
         }
 
         .bg-bubbles li:nth-child(7) {
@@ -240,7 +229,7 @@
             animation-delay: 2s;
             -webkit-animation-duration: 40s;
             animation-duration: 40s;
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: white;
         }
 
         .bg-bubbles li:nth-child(10) {
@@ -279,7 +268,7 @@
     ?>
     <div class="wrapper">
         <div class="container">
-            <h1>buy request</h1>
+            <h1>Buy Request</h1>
             <?php
             $p_id = $_GET['pid'];
             $usrid = $_GET['owid'];
@@ -287,9 +276,9 @@
             ?>
 
             <form action="submit_req.php" method="post">
-                <input type="text" placeholder="enter your email" name="emreq">
-                <input type="text" placeholder="enter your phone number" name="con1req">
-                <input type="text" placeholder="enter your offering price" name="monyreq">
+                <input type="email" placeholder="Enter your email" name="emreq">
+                <input type="text" placeholder="Enter your ph number" name="con1req">
+                <input type="text" placeholder="Enter your offering price" name="monyreq">
                 <?php
                     echo '<input type="hidden" value="'.$p_id.'" name = "p_id">   '  ;
                     echo '<input type="hidden" value="'.$usrid.'" name = "usrid">   '  ;
