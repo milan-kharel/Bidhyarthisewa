@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav style="background-color: #DCBEBE;height:4rem;">
         <a href="./">
             <div class="brand">
                 <img src="./assets/Logo/Logo-400-100.png" alt="logo_here">
@@ -43,14 +43,14 @@
             echo '<div class="nav-item">Welcome ' . $_SESSION["useremail"] . '</div>';
 
             //logout button
-            echo '<a href="partials/logouthandle.php">logout</a>';
+            echo '<a href="partials/logouthandle.php">LogOut</a>';
         } else {
             echo '
             <div>
-            <a href="partials/login.php">login</a>
+            <a href="partials/login.php" style="color:black;font-weight:900;">LogIn</a>
             </div>
             <div>
-            <a href="partials/signup.php">signup</a>
+            <a href="partials/signup.php" style="color:black;font-weight:900;">SignUp</a>
             </div>
             ';
         }

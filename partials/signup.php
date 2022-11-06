@@ -7,19 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @font-face {
-            font-family: 'Source Sans Pro';
-            font-style: normal;
-            font-weight: 200;
-            src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf) format('truetype');
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-        @font-face {
-            font-family: 'Source Sans Pro';
-            font-style: normal;
-            font-weight: 300;
-            src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
-        }
 
         * {
             box-sizing: border-box;
@@ -29,21 +18,21 @@
         }
 
         body {
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: white;
             font-weight: 300;
         }
 
         body ::-webkit-input-placeholder {
             /* WebKit browsers */
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: white;
             font-weight: 300;
         }
 
         body :-moz-placeholder {
             /* Mozilla Firefox 4 to 18 */
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: white;
             opacity: 1;
             font-weight: 300;
@@ -51,7 +40,7 @@
 
         body ::-moz-placeholder {
             /* Mozilla Firefox 19+ */
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: white;
             opacity: 1;
             font-weight: 300;
@@ -59,14 +48,14 @@
 
         body :-ms-input-placeholder {
             /* Internet Explorer 10+ */
-            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: white;
             font-weight: 300;
         }
 
         .wrapper {
             background: #50a3a2;
-            background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+            background: linear-gradient(to bottom right, #AD0000 0%, #DCBEBE 100%);
             position: absolute;
             top: 43%;
             left: 0;
@@ -127,7 +116,7 @@
         form input:focus {
             background-color: white;
             width: 300px;
-            color: #53e3a6;
+            color: #AD0000;
         }
 
         form button {
@@ -135,10 +124,10 @@
             -moz-appearance: none;
             appearance: none;
             outline: 0;
-            background-color: white;
+            background-color: black;
             border: 0;
             padding: 10px 15px;
-            color: #53e3a6;
+            color: white;
             border-radius: 3px;
             width: 250px;
             cursor: pointer;
@@ -147,7 +136,7 @@
         }
 
         form button:hover {
-            background-color: #f5f7f9;
+            background-color: #AD0000;
         }
 
         .bg-bubbles {
@@ -273,13 +262,13 @@
     </style>
 </head>
 
-<body>
+<body style="background-color: #DCBEBE;">
     <?php
    
     ?>
     <div class="wrapper">
         <div class="container">
-            <h1>CREATE AN ACCOUNT</h1>
+            <h1 style="color: black;font-weight:900;">Create a New Account</h1>
 
             <form class="form" action="signuphandle.php" method="POST">
                 <input type="text" placeholder="email" name="uemail" >

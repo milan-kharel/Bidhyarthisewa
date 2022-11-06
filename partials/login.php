@@ -7,19 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @font-face {
-            font-family: 'Source Sans Pro';
-            font-style: normal;
-            font-weight: 200;
-            src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf) format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Source Sans Pro';
-            font-style: normal;
-            font-weight: 300;
-            src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
-        }
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
         * {
             box-sizing: border-box;
@@ -29,44 +17,44 @@
         }
 
         body {
-            font-family: 'Source Sans Pro', sans-serif;
-            color: white;
+            font-family: 'Poppins', sans-serif;
+            color: black;
             font-weight: 300;
         }
 
         body ::-webkit-input-placeholder {
             /* WebKit browsers */
-            font-family: 'Source Sans Pro', sans-serif;
-            color: white;
+            font-family: 'Poppins', sans-serif;
+            color: black;
             font-weight: 300;
         }
 
         body :-moz-placeholder {
             /* Mozilla Firefox 4 to 18 */
-            font-family: 'Source Sans Pro', sans-serif;
-            color: white;
+            font-family: 'Poppins', sans-serif;
+            color: black;
             opacity: 1;
             font-weight: 300;
         }
 
         body ::-moz-placeholder {
             /* Mozilla Firefox 19+ */
-            font-family: 'Source Sans Pro', sans-serif;
-            color: white;
+            font-family: 'Poppins', sans-serif;
+            color: black;
             opacity: 1;
             font-weight: 300;
         }
 
         body :-ms-input-placeholder {
             /* Internet Explorer 10+ */
-            font-family: 'Source Sans Pro', sans-serif;
-            color: white;
+            font-family: 'Poppins', sans-serif;
+            color: black;
             font-weight: 300;
         }
 
         .wrapper {
             background: #50a3a2;
-            background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+            background: linear-gradient(to bottom right, #DCBEBE 0%, #AD0000 100%);
             position: absolute;
             top: 50%;
             left: 0;
@@ -96,7 +84,7 @@
         }
 
         form {
-            padding: 20px 0;
+            padding: 5em 0;
             position: relative;
             z-index: 2;
         }
@@ -115,7 +103,7 @@
             display: block;
             text-align: center;
             font-size: 18px;
-            color: white;
+            color: black;
             transition-duration: 0.25s;
             font-weight: 300;
         }
@@ -127,7 +115,7 @@
         form input:focus {
             background-color: white;
             width: 300px;
-            color: #53e3a6;
+            color: #AD0000;
         }
 
         form button {
@@ -135,10 +123,10 @@
             -moz-appearance: none;
             appearance: none;
             outline: 0;
-            background-color: white;
+            background-color: black;
             border: 0;
             padding: 10px 15px;
-            color: #53e3a6;
+            color: white;
             border-radius: 3px;
             width: 250px;
             cursor: pointer;
@@ -148,6 +136,7 @@
 
         form button:hover {
             background-color: #f5f7f9;
+            color:#AD0000;
         }
 
         .bg-bubbles {
@@ -174,6 +163,7 @@
 
         .bg-bubbles li:nth-child(1) {
             left: 10%;
+            background-color: white;
         }
 
         .bg-bubbles li:nth-child(2) {
@@ -190,6 +180,7 @@
             left: 25%;
             -webkit-animation-delay: 4s;
             animation-delay: 4s;
+            background-color: white;
         }
 
         .bg-bubbles li:nth-child(4) {
@@ -211,7 +202,7 @@
             height: 120px;
             -webkit-animation-delay: 3s;
             animation-delay: 3s;
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: white;
         }
 
         .bg-bubbles li:nth-child(7) {
@@ -240,7 +231,7 @@
             animation-delay: 2s;
             -webkit-animation-duration: 40s;
             animation-duration: 40s;
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: #AD0000;
         }
 
         .bg-bubbles li:nth-child(10) {
@@ -273,23 +264,26 @@
     </style>
 </head>
 
-<body>
+<body style="background-color: #DCBEBE;">
     <?php
        
     ?>
-   
+   <h1 style="text-align:center;padding-top:1.5em;font-size: 3em;color: #AD0000;font-weight:900;">Welcome to Bidhyarthisewa</h1><br>  
     <div class="wrapper">
-        <h2 style="text-align: center;">use the credentials given below for seller or buyer test</h2>
-        <h3 style="text-align: center;">email: test@seller.com pass: test <br> email: test@buyer.com pass: test</h1>
-    
+        <!-- <h2 style="text-align: center;">use the credentials given below for seller or buyer test</h2>
+        <h3 style="text-align: center;">email: test@seller.com pass: test <br> email: test@buyer.com pass: test</h1> -->
+        
         <div class="container">
-            <h1>LOGIN INTO ACCOUNT</h1>
+            <h2 style="margin: -1.5em 0 -1em 0;font-weight:900;font-size:2em;">Please LogIn</h2>
 
-            <form class="form" action="loginhandle.php" method="POST">
+            <form class="form" action="loginhandle.php"  method="POST">
                 <input type="text" placeholder="email" name="logemail">
                 <input type="password" placeholder="Password" name="logpass">
-                <button type="submit" id="login-button">Login</button>
+                <button type="submit" id="login-button">Login</button><br><br>
+                <span style="color:white;">New Member?<a href="signup.php" style="color:white;">Register Here</a></span>
+                
             </form>
+            
         </div>
 
         <ul class="bg-bubbles">
